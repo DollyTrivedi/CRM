@@ -57,6 +57,10 @@ def products(request):
    return render(request,'accounts/products.html',{'products':products})
 #   return HttpResponse('product page')
 
+
+
+# This is {Parth Branch changes}
+
 def customers(request,pk_test):
    customer = Customer.objects.get(id=pk_test)
    orders = customer.order_set.all()
