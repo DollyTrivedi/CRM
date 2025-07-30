@@ -27,9 +27,6 @@ def logoutuser(request):
    return redirect('login')
 
 
-def logoutuser(request):
-   logout(request)
-   return redirect('login')
 
 
 def Registerpage(request):
