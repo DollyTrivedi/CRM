@@ -27,6 +27,11 @@ def logoutuser(request):
    return redirect('login')
 
 
+def logoutuser(request):
+   logout(request)
+   return redirect('login')
+
+
 def Registerpage(request):
    form = CreateUserForm()
    if request.method == 'POST':
